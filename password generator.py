@@ -30,9 +30,11 @@ def main():
         # Generate and display the password
         password = generate_password(length, use_uppercase, use_digits, use_special)
         print("Generated password:", password)
-
-    except ValueError:
-        print("Please enter a valid number for length.")
+ except ValueError:
+            print("Please enter a valid number for length.")
+    except:
+            print("please enter number !")
+            main()
 
 # Run the password generator
 main()
